@@ -39,4 +39,17 @@ class WordController extends Controller
         session()->flash('status' , 'Successfully saved.');
         return redirect()->route('home');
     }
+
+    public function delete(Request $request, $id)
+    {
+       $word = $request->user()->words()->where('id', $id)->first();
+
+       if(!$word) {
+            return back()->withErrors(['delete_error' => 'you cant delete.']);
+       }
+
+       $word->delete();
+       session()->flash('status' , 'Successfully deleted.');
+       return redirect()->route('home');
+    }
 }
