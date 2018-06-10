@@ -12,11 +12,11 @@
                         @csrf
                         <div class="form-group">
                             <label for="word">Word</label>
-                            <input type="text" name="word" id="word" class="form-control" placeholder="Word"> 
+                            <input type="text" name="word" id="word"  autofocus class="form-control" />  
                         </div>
                         <div class="form-group">
                             <label for="mean">Mean</label>
-                            <input type="text" name="mean" id="mean" class="form-control" placeholder="Mean"> 
+                            <input type="text" name="mean" id="mean" class="form-control" /> 
                         </div>
                         <button type="submit" class="btn btn-secondary">Save</button>
                         <a href="{{route('home')}}" class="btn btn-warning">Back</a>
