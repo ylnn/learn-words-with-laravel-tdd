@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $words = request()->user()->words;
+        return view('home', compact('words'));
     }
 }
