@@ -19,6 +19,7 @@
                             <input type="text" name="mean" id="mean" class="form-control" placeholder="Mean"> 
                         </div>
                         <button type="submit" class="btn btn-secondary">Save</button>
+                        <a href="{{route('home')}}" class="btn btn-warning">Back</a>
                     </form>
                 </div>
             </div>
