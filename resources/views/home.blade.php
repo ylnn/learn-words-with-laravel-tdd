@@ -7,6 +7,15 @@
                     <div>
                         <a href="{{route('word.create')}}" class="btn btn-info">Add New</a>
                     </div>
+                    <div class="pt-3 pb-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <form action="{{route('home')}}" method="GET">
+                                    <input type="text" class="form-control" name="filter" placeholder="Filter...">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="pt-3">
                         <table class="table">
                             <thead>
