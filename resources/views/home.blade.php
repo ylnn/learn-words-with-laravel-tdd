@@ -9,7 +9,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <form action="{{route('home')}}" method="GET">
-                                    <input type="text" class="form-control" name="filter" placeholder="Filter...">
+                                    <input type="text" class="form-control" name="filter" id="filter" placeholder="Filter...">
                                 </form>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
@@ -47,3 +47,12 @@
                 </div>
             </div>
 @endsection
+
+
+@push('scripts')
+    <script>
+        $( document ).ready(function() {
+            $('#filter').focus()
+        })
+    </script>
+@endpush
