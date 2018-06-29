@@ -99,5 +99,7 @@
 
 
         </div>
+        @include('parts.analytics')
     </body>
+
 </html>
